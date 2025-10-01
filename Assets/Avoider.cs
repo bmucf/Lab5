@@ -28,6 +28,7 @@
         public Vector2 spawnRange = new Vector2(-23f, 23f);
 
         private Vector3 goal;
+        public GameObject cubeObstacle;
 
         void OnEnable()
         {
@@ -144,9 +145,8 @@
                 float z = Random.Range(spawnRange.x, spawnRange.y);
                 Vector3 pos = new Vector3(x, 1f, z);
 
-                GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
+                GameObject cube = GameObject.Instantiate(cubeObstacle);
                 cube.transform.position = pos;
-                cube.transform.localScale = Vector3.one * cubeSize;
                 cube.tag = "Obstacle";
             }
         }

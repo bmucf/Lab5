@@ -616,6 +616,7 @@ MonoBehaviour:
   cubeSize: 2
   numberOfCubes: 30
   spawnRange: {x: -23, y: 23}
+  cubeObstacle: {fileID: 6058723713745839623, guid: ed7ce35a02127044db72ca0e438813ab, type: 3}
 --- !u!195 &714370634
 NavMeshAgent:
   m_ObjectHideFlags: 0
